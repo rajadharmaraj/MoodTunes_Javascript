@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoodTunes - Music Playlist Manager</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        h1 {
+            color: #6200ea;
+            text-align: center;
+        }
+        .mood-container {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        .mood-button {
+            padding: 12px 20px;
+            background-color: #6200ea;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            margin: 5px;
+            transition: background-color 0.3s;
+        }
+        .mood-button:hover {
+            background-color: #3700b3;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #6200ea;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        #playlist-controls {
+            display: none;
+            margin: 20px 0;
+            text-align: center;
+        }
+        button {
+            padding: 10px 15px;
+            margin: 0 5px;
+            background-color: #6200ea;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #3700b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎵 MoodTunes 🎵</h1>
+    <p>Select your current mood to get a personalized music playlist:</p>
+    
+    <div class="mood-container">
+        <button class="mood-button" data-mood="happy">😊 Happy</button>
+        <button class="mood-button" data-mood="sad">😢 Sad</button>
+        <button class="mood-button" data-mood="focused">🧠 Focused</button>
+        <button class="mood-button" data-mood="energetic">⚡ Energetic</button>
+        <button class="mood-button" data-mood="relaxed">😌 Relaxed</button>
+    </div>
+    
+    <div id="playlist-container"></div>
+    
+    <div id="playlist-controls">
+        <button id="play-button">▶️ Play</button>
+        <button id="shuffle-button">🔀 Shuffle</button>
+        <button id="save-button">💾 Save Playlist</button>
+    </div>
+    
+    <div id="library-container"></div>
+    
+    <script src="moodtunes.js"></script>
+</body>
+</html>

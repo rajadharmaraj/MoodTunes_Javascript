@@ -1,0 +1,28 @@
+MoodTunes Reference URLs
+here are some options for accessing the code:
+
+Option 1: Create Files Locally
+Create a new folder on your computer named "MoodTunes"
+Create two files inside: index.html and moodtunes.js
+Copy and paste the code from my previous messages into these files
+
+Option 2: Use Online Code Editors
+You can copy the code into these online platforms to run it:
+CodePen: https://codepen.io/
+Create a new pen
+Paste the HTML code in the HTML section
+Paste the JavaScript code in the JS section
+
+JSFiddle: https://jsfiddle.net/
+Paste the HTML and JavaScript into the appropriate panels
+
+Click "Run" to test your app
+Replit: https://replit.com/
+
+Create a new HTML/CSS/JS repl
+Add the files and code there
+
+Option 3: Code Sharing via GitHub Gist
+We can check out this GitHub Gist we have referenced that contains similar code:
+https://gist.github.com/example/moodtunes-playlist-manager
+(Note: This is an example URL pattern -we will need to create your own gist or use one of the other methods)
